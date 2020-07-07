@@ -8,8 +8,7 @@ describe('User', () => {
 	const testData = [{ companyName: '10clouds', url: '10clouds.com', positionName: 'Senior QA' }];
 
 	testData.forEach(data => {
-		it(`should be able to search for new QA opportunities in ${data.positionName}`, () => {
-			browser.debug();
+		it(`should be able to search for new QA opportunities as ${data.positionName}`, () => {
 			startBrowserMaximized();
 			Google.searchFor(data.companyName);
 			expect(GoogleResults.isUrlDisplayedByHref(data.url)).to.be.true;

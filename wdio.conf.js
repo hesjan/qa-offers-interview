@@ -101,7 +101,7 @@ exports.config = {
             {
                 ignoreExtraDrivers: true,
                 installArgs: {
-                    version: '3.141.59',
+                    version: '3.141.5',
                     drivers: {
                         chrome: { version: '2.44' },
                         firefox: { version: '0.26.0' },
@@ -109,7 +109,7 @@ exports.config = {
                 },
                 args: {
                     drivers: {
-                        version: '3.141.59',
+                        version: '3.141.5',
                         chrome: { version: '2.44' },
                         firefox: { version: '0.26.0' },
                     },
