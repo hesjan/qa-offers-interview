@@ -1,0 +1,37 @@
+{
+  "name": "10clouds-interview-task",
+  "version": "1.0.0",
+  "description": "Project created for interview purposes",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "test:chrome": "cross-env BROWSER=chrome ./node_modules/.bin/wdio wdio.conf.js",
+    "test:firefox": "cross-env BROWSER=firefox ./node_modules/.bin/wdio wdio.conf.js",
+    "allure": "allure generate ./allure-results --clean && allure open"
+  },
+  "keywords": [
+    "WebdriverIO",
+    "Mocha",
+    "Chai",
+    "Prettier"
+  ],
+  "author": "Michał Czok",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/register": "^7.9.0",
+    "@wdio/allure-reporter": "^6.1.23",
+    "@wdio/cli": "^6.1.24",
+    "@wdio/local-runner": "^6.1.24",
+    "@wdio/mocha-framework": "^6.1.19",
+    "@wdio/selenium-standalone-service": "^6.1.14",
+    "@wdio/spec-reporter": "^6.1.23",
+    "@wdio/sync": "^6.1.14",
+    "cross-env": "^7.0.2",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  }
+}
