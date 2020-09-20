@@ -1,8 +1,5 @@
 import { startBrowserMaximized } from '../helpers/test-utils';
-import Google from '../pages/Google';
-import GoogleResults from '../pages/GoogleResults';
-import Home from '../pages/Home'
-import JobOffers from '../pages/JobOffers';
+import { Google, GoogleResults, Home,JobOffers } from "../pages";
 
 describe('User', () => {
 	const testData = [{ companyName: '10clouds', url: '10clouds.com', positionName: 'Senior QA' }];
